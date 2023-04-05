@@ -26,8 +26,12 @@
             padding: 8px;
         }
 
-        tr.destaque {
-            background-color: chartreuse ;
+        .vermelho {
+            background-color: red;
+        }
+
+        .amarelo {
+            background-color: yellow;
         }
     </style>
 </head>
@@ -35,6 +39,11 @@
     <h1>Exercício de Tabelas</h1>
 
     <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho" span="2">
+            <col class="amarelo">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
@@ -54,7 +63,7 @@
             <td>29</td>
             <td>Programador</td>
         </tr>
-        <tr class="destaque">
+        <tr>
             <td>Gustavo</td>
             <td>M</td>
             <td>42</td>
@@ -66,7 +75,7 @@
             <td>19</td>
             <td>Vendedor</td>
         </tr>
-        <tr class="destaque">
+        <tr>
             <td>Maria</td>
             <td>F</td>
             <td>39</td>
